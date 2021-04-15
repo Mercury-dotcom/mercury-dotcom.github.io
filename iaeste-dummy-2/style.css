@@ -1,0 +1,647 @@
+:root {
+    --main-blue: #002c42;
+}
+
+
+/* Loading Spinner GIF */
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader>img {
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+/* 
+    Content ------------------------------->
+  */
+
+#title {
+    /* background-color: #002c42; */
+    color: #fff;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+h1 {
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+html,
+body {
+    font-family: "Montserrat-Black", sans-serif;
+    background-color: var(--main-blue);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-image: url(landing-back.jpg);
+}
+
+
+/*Navbar style*/
+
+#header1 {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar {
+    padding: 50px 0;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-brand {
+    color: #dcdde1;
+}
+
+.nav-item {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+
+/*responsive navbar*/
+
+
+/* Wraps .main and .title sections */
+
+#landing-main {
+    position: relative;
+    background-image: url("../images/landing-back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+    max-height: 105vh;
+    padding-top: 15vh;
+}
+
+#landing {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    width: 100%;
+}
+
+#landing-front {
+    display: block;
+    height: 35%;
+    width: 60%;
+    padding-top: 5%;
+    margin: auto;
+    position: relative;
+    bottom: 120px;
+}
+
+#landing-subtitle {
+    display: block;
+    height: 30%;
+    width: 40%;
+    margin: auto;
+    position: relative;
+    bottom: 120px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 851px) {
+    #landing-front {
+        display: block;
+        padding-top: 7rem!important;
+        height: 30vh;
+        width: 85vw;
+    }
+    #landing-subtitle {
+        display: block;
+        height: 30vh;
+        width: 80vw;
+        bottom: 160px;
+    }
+    .container {
+        height: 20vh!important;
+    }
+    /*last section responsive*/
+    #membership {
+        display: none;
+    }
+}
+
+#features {
+    padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 5%;
+}
+
+h3 {
+    font-family: "Montserrat-Bold", sans-serif;
+}
+
+.quote {
+    color: #8f8f8f;
+}
+
+.icon {
+    color: #002c42;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #0d2f40;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+body {
+    color: #c2c1c2;
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    padding: 1em;
+}
+
+#slider-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* 
+    About Us Section with Stats
+  */
+
+#about-us {
+    background-size: cover;
+    background-color: #002c42;
+    background-repeat: no-repeat;
+    padding: 5vh 6vw;
+    color: white;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+#about-us-header {
+    grid-column: 1/2;
+}
+
+#about-us-text {
+    padding: 0;
+    margin: 2vh 0 0 0;
+    grid-column: 1/2;
+}
+
+#stat-wrapper {
+    text-align: center;
+}
+
+.stat {
+    text-align: left;
+    padding: 0 5vw;
+    grid-column: 2/2;
+}
+
+.stat>h5 {
+    margin: 0;
+    font-size: 1em;
+    margin-bottom: 1vh;
+}
+
+.stat>div {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 3vh;
+    padding: 0;
+}
+
+.stat-value {
+    background-color: rgb(172, 175, 170);
+    text-align: right;
+    line-height: 100%;
+    font-size: 0.8em;
+    padding: 6px;
+}
+
+#country-stat {
+    width: 86%;
+}
+
+#LC-stat {
+    width: 75%;
+}
+
+
+/* 
+      About Us Mobile View 
+  */
+
+@media only screen and (max-width: 768px) {
+    #about-us {
+        display: block;
+        text-align: center;
+    }
+    #about-us-text {
+        margin: 4vh 0 0 0;
+    }
+    #stat-wrapper {
+        margin-top: 3vh;
+    }
+}
+
+figure {
+    position: absolute;
+    width: 400%;
+    left: 0;
+    animation: 20s slider infinite;
+    -webkit-animation: 20s slider infinite;
+    border-top: 1px solid #c2c1c2;
+    border-bottom: 1px solid #c2c1c2;
+    margin: 0;
+}
+
+blockquote {
+    width: 25%;
+    margin: 0;
+    float: left;
+    padding-bottom: 1em;
+}
+
+@-webkit-keyframes slider {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(0%);
+    }
+    33% {
+        transform: translateX(-25%);
+    }
+    58% {
+        transform: translateX(-25%);
+    }
+    66% {
+        transform: translateX(-50%);
+    }
+    91% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(-75%);
+    }
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(0%);
+    }
+    33% {
+        transform: translateX(-25%);
+    }
+    58% {
+        transform: translateX(-25%);
+    }
+    66% {
+        transform: translateX(-50%);
+    }
+    91% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(-75%);
+    }
+}
+
+@media (min-width: 750px) {
+    #testimonials {
+        height: 150px;
+    }
+}
+
+#testimonials {
+    text-align: center;
+    background-color: #002c42;
+    color: #fff;
+}
+
+h2 {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 20px 50px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+#membership {
+    background-color: #002c42;
+}
+
+.O-I-button {
+    margin: 5% 3% 5% 0;
+    background-color: #6c757d;
+    text-decoration: none;
+    color: white;
+}
+
+.membership-links {
+    color: white;
+    text-decoration: none;
+}
+
+.membership-links:link,
+.membership-links:active,
+.membership-links:hover {
+    color: white;
+}
+
+#membership #header-1 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+}
+
+#membership #header-2 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 50px 0px;
+}
+
+#membership #header-2 img {
+    padding: 20px;
+}
+
+#membership #iaeste-india {
+    height: 60px;
+}
+
+#membership #line {
+    background-color: #ffffff;
+    margin: auto 50px;
+    height: 60px;
+    width: 3px;
+}
+
+#membership #exchange-year {
+    margin: 20px;
+    height: 30px;
+}
+
+#membership #body {
+    background-color: x;
+    padding: 30px auto;
+    z-index: 0;
+}
+
+#membership #body #back {
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    margin: 20px;
+    z-index: 1;
+}
+
+#membership {
+    z-index: 1;
+    padding: 25px;
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Avenir";
+}
+
+#membership #stats {
+    z-index: 1;
+    display: grid;
+    color: #ffffff;
+    font-family: "Avenir";
+    text-align: center;
+    grid-template-columns: auto auto auto auto;
+    padding-bottom: 10px;
+}
+
+#membership #stats div {
+    margin-bottom: 40px;
+}
+
+#membership #stats h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+}
+
+#membership #stats p {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+
+.abc {
+    position: relative;
+    left: 40px;
+}
+
+
+/* Responsive */
+
+.MobileMembership {
+    padding: 7% 15%;
+    background-color: #002c42;
+    position: relative;
+    z-index: 1;
+}
+
+.box {
+    text-align: center;
+    padding: 5%;
+}
+
+@media screen and (min-width: 851px) and (max-width: 3000px) {
+    .box {
+        display: none;
+    }
+    .MobileMembership {
+        display: none;
+    }
+}
+
+
+/* 
+    Footer  ------------------------------------------------------
+  */
+
+#footer {
+    margin: auto;
+    padding: 2% 15%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    font-size: 0.9em;
+    background-color: var(--main-blue);
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    #footer {
+        padding: 2% 2%;
+    }
+}
+
+#column-left {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding-right: 3px;
+}
+
+.footer-field {
+    display: grid;
+    grid-template-columns: 30px auto;
+    margin: 12px 0;
+}
+
+.footer-icon {
+    grid-column: 1/2;
+    font-weight: normal;
+    font-size: 20px;
+    align-self: center;
+}
+
+.footer-info {
+    grid-column: 2/2;
+    margin: 0 0 0 15px;
+    padding: 0;
+    display: block;
+}
+
+#column-right {
+    grid-column: 2;
+    margin: 12px 0;
+}
+
+#footer-lc-list {
+    margin: auto;
+}
+
+#footer-lc-list a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer-lc-list a:hover {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.social-icon {
+    color: white;
+    margin: 20px 10px 20px 0;
+}
+
+#footer-bottom {
+    grid-column: 1/3;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.footer_text {
+    color: #8f8f8f;
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+}
+
+#iecse_logo {
+    height: 0.8rem;
+    vertical-align: baseline;
+    margin-left: 2px;
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: #fff;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: #fff;
+}
