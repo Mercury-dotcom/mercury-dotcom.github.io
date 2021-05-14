@@ -21,21 +21,30 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <style>
         df-messenger {
-            --df-messenger-bot-message: #00838F;
-            --df-messenger-button-titlebar-color: black;
-            --df-messenger-chat-background-color: #fafafa;
-            --df-messenger-font-color: white;
-            --df-messenger-send-icon: #002c42;
-            --df-messenger-user-message: #002c42;
-            --df-messenger-input-box-color: #B3CDD1;
-            --df-messenger-input-placeholder-font-color: #424242;
+           --df-messenger-bot-message: #00838F;
+   --df-messenger-button-titlebar-color: white;
+   --df-messenger-chat-background-color: #fafafa;
+   --df-messenger-font-color: white;
+   --df-messenger-send-icon: #002c42;
+   --df-messenger-user-message: #002c42;
+	   --df-messenger-input-box-color: #B3CDD1;
+	  --df-messenger-input-placeholder-font-color: #424242;
+	  --df-messenger-button-titlebar-font-color: black;
+	  --df-messenger-minimized-chat-close-icon-color: black;
         }
     </style>
 </head>
 
 <body>
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger chat-icon="https:&#x2F;&#x2F;www.iaeste.in&#x2F;live&#x2F;images&#x2F;logo.png" intent="WELCOME" chat-title="Iaeste-list-alternative" agent-id="245ac9a1-da7a-42ca-9b21-cefbc93403fd" language-code="en"></df-messenger>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https:&#x2F;&#x2F;iaeste.uni-rostock.de&#x2F;storages&#x2F;uni-rostock&#x2F;Andere&#x2F;IAESTE&#x2F;iaeste-logo__2_.jpg"
+  intent="WELCOME"
+  chat-title="IAESTE"
+  agent-id="43724ba1-66b1-4a58-bd5d-e472619f0daf"
+  language-code="en"
+></df-messenger>
+    
     <div class="loader">
         <img src="assets/images/spinner.gif" alt="Loading..." />
     </div>
