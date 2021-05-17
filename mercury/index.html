@@ -14,18 +14,27 @@
     <style>
         df-messenger {
             --df-messenger-bot-message: #878fac;
-            --df-messenger-button-titlebar-color: #df9b56;
+            --df-messenger-button-titlebar-color:  white;
             --df-messenger-chat-background-color: #fafafa;
-            --df-messenger-font-color: white;
+            --df-messenger-font-color: black;
             --df-messenger-send-icon: #878fac;
             --df-messenger-user-message: #1e5397;
+		--df-messenger-minimized-chat-close-icon-color:black;
+		df-messenger-button-titlebar-font-color: black;
         }
     </style>
 </head>
 
 <body class="is-preload">
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger chat-icon="https:&#x2F;&#x2F;storage.googleapis.com&#x2F;cloudprod-apiai&#x2F;548280c4-4635-4181-b90c-4adb15c0e055_x.png" intent="WELCOME" chat-title="Mercury" agent-id="4a4deb9a-092f-41ab-97f7-012e59f573ed" language-code="en"></df-messenger>
+   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https:&#x2F;&#x2F;i.ibb.co&#x2F;MftmsLY&#x2F;download.jpg"
+  intent="WELCOME"
+  chat-title="Covid"
+  agent-id="2bfa5de8-7738-469a-a7d0-b58e9103f820"
+  language-code="en"
+></df-messenger>
 
     <!-- Header -->
     <div id="header">
