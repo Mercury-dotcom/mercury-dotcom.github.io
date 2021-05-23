@@ -23,6 +23,19 @@
 		--df-messenger-button-titlebar-font-color: black;
         }
     </style>
+	<script>
+		const dfMessenger = document.querySelector('df-messenger');
+dfMessenger.addEventListener('df-accordion-clicked', function (event) {
+  // Handle event
+  element: {
+  title: string,
+  subtitle: string,
+  image: {
+    src: {rawUrl: string}
+  },
+  text: string
+}
+});
 </head>
 
 <body class="is-preload">
